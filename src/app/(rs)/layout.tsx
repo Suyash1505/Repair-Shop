@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 
 export default function RSLayout({ children }: 
     Readonly<{children: React.ReactNode;}>){
@@ -6,6 +7,8 @@ export default function RSLayout({ children }:
         <div className="mx-auto w-full max-w-7xl">
 
             {/* ----------- HEADER ------------ */}
+            <Header/>
+            
             <div className="px-4 py-2">
                 {children}
             </div>

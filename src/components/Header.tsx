@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Home = () => {
+const Header = () => {
 
     return (
         <div className='text-gray-50'>
-            Home Page
+            Header
         </div>
     )
 }
 
-export default Home
+export default Header
