@@ -3,7 +3,7 @@ import React from 'react'
 const Customers = () => {
 
     return (
-        <div>
+        <div className='animate-appear'>
             Customers Page
         </div>
     )

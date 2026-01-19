@@ -3,7 +3,7 @@ import React from "react"
 
 const Home = () => {
   return (
-    <main className="flex min-h-dvh items-center justify-center px-4">
+    <main className="flex min-h-dvh items-center justify-center px-4 home-bg">
       <section className="relative w-full max-w-md rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl shadow-black/40 p-8 text-center" >
         {/* Glow layer */}
         <div className="absolute inset-0 -z-10 rounded-2xl from-white/20 to-transparent blur-2xl" />

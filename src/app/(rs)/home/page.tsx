@@ -3,7 +3,7 @@ import React from 'react'
 const Home = () => {
 
     return (
-        <div className='text-gray-50'>
+        <div className='animate-appear'>
             Home Page
         </div>
     )

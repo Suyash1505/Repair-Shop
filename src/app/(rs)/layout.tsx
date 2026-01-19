@@ -7,7 +7,7 @@ export default function RSLayout({ children }:
         <div className="mx-auto w-full max-w-7xl">
 
             {/* ----------- HEADER ------------ */}
-            <Header/>
+            <Header />
             
             <div className="px-4 py-2">
                 {children}
