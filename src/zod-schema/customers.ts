@@ -22,7 +22,7 @@ export const insertCustomerSchema = createInsertSchema(customers, {
         z.string().email("Invalid Email Address"),
 
     zip: () =>
-        z.string().regex(/^\d{5}(-\d{4})?$/, "Invalid Zip Code"),
+        z.string().regex(/^\d{6}(-\d{4})?$/, "Invalid Zip Code"),
 
     phone: () =>
         z.string().regex(

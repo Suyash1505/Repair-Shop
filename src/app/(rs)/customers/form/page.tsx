@@ -1,5 +1,6 @@
 import BackButton from "@/components/BackButton";
 import { getCustomers } from "@/lib/queries/getCustomers";
+import CustomerForm from "./CustomerForm";
 
 export default async function CustomerFormPage({
     searchParams,
@@ -33,6 +34,7 @@ export default async function CustomerFormPage({
             return (
                 <>
                     {/* EDIT CUSTOMER FORM JSX HERE */}
+                    <CustomerForm customer={customer}/>
                 </>
             );
         }
@@ -41,6 +43,7 @@ export default async function CustomerFormPage({
             return (
                 <>
                     {/* NEW CUSTOMER FORM JSX HERE */}
+                    <CustomerForm/>
                 </>
             );
         }

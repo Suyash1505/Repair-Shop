@@ -1,6 +1,7 @@
 import BackButton from "@/components/BackButton";
 import { getCustomers } from "@/lib/queries/getCustomers";
 import { getTickets } from "@/lib/queries/getTickets";
+import TicketForm from "./TicketsForm";
 
 
 export default async function TicketFormPage({
@@ -60,6 +61,11 @@ export default async function TicketFormPage({
 
             // RETURN TICKET FORM
             console.log(customer);
+            return (
+                <>
+                    <TicketForm customer={customer}/>
+                </>
+            )
         }
 
         // EDIT TICKET FORM 
@@ -84,6 +90,14 @@ export default async function TicketFormPage({
             // RETURN TICKET FORM
             console.log("Ticket : ", ticket);
             console.log("Customer : ", customer);
+            return (
+                <>
+                    <TicketForm 
+                        customer={customer}
+                        ticket={ticket}
+                    />
+                </>
+            )
         }
     } 
     catch (error) {
